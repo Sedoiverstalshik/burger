@@ -1,0 +1,75 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: var(--light_color);
+}
+p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height:1.2;
+  color: var(--text_color);
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+html,body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+.btn{
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding: 1.5rem 3.7rem;
+  background: var(--accent_color);
+  color: var(--light_color);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+// extend
+.flex-aic-jcsb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@import '_root';
+@import '_header';
+@import '_cards';
+@import '_promo';
+@import '_product';
+@import '_reviews';
+@import '_download';
+

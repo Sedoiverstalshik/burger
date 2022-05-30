@@ -1,0 +1,45 @@
+.product{
+  background-color: var(--bg_color);
+  padding: 15rem 0 7.5rem;
+  &__wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 114rem;
+    margin: 0 auto;
+  }
+  &__card{
+    position: relative;
+    max-width: 55.5rem;
+    max-height: 30rem;
+  }
+  &__card-box{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  &__card-box-left{
+    left: 5rem;
+  }
+  &__card-title{
+    font-size: 3rem;
+    line-height: 1.17;
+    margin-bottom: 2rem;
+  }
+  &__card-desc{
+    max-width: 26.3rem;
+    margin-bottom: 1rem;
+  }
+  &__card-price{
+    letter-spacing: 0.1em;
+    color: var(--accent_color);
+    margin-bottom: 1rem;
+    span{
+      text-decoration-line: line-through;
+      color: var(--accent_color);
+      opacity: 0.5;
+      margin-left: 1rem;
+    }
+  }
+}

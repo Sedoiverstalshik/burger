@@ -1,0 +1,51 @@
+.header{
+  background-image: url('../images/main_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  &__top{
+    @extend .flex-aic-jcsb;
+    margin-bottom: 18.6rem;
+  }
+  &__logo{
+    width: 10rem;
+    height: 10rem;
+  }
+  &__menu-list{
+    @extend .flex-aic-jcsb;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    color: var(--text_color);
+    transition: color 0.3s linear;
+    li + li{
+      margin-left: 2.8rem;
+    }
+    a{
+      color:var(--text_color) ;
+    }
+    a:hover{
+      color:var(--light_color) ;
+    }
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    color: var(--text_color);
+    margin-bottom: 0.7rem;
+  }
+  &__title{
+    font-size: 5.7rem;
+    line-height:1.18;
+    margin-bottom: 3.7rem;
+    max-width: 55.5rem;
+  }
+  &__desc{
+    font-size: 1.8rem;
+    line-height: 1.17;
+    margin-bottom: 4.2rem;
+    max-width: 52.3rem;
+  }
+}

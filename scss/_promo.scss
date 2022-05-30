@@ -1,0 +1,39 @@
+.promo{
+  background-color: var(--bg2_color);
+  padding-bottom: 4.3rem;
+  &__wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  &__box{
+    justify-self: center;
+  }
+  &__title{
+    font-size: 4.4rem;
+    line-height: 1.18;
+    margin-bottom: 2.4rem;
+  }
+  &__desc{
+    max-width: 36.8rem;
+    margin-bottom: 1.3rem;
+  }&__price{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    color: var(--accent_color);
+    margin-bottom: 1.2rem;
+    span{
+      display: inline-block;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+      text-decoration-line: line-through;
+      color: var(--accent_color);
+      opacity: .5;
+      margin-left: 0.6rem;
+    }
+  }
+}
