@@ -182,7 +182,8 @@ html, body {
   font-size: 1.6rem;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 3ren;
+  max-width: 22.4rem;
+  margin: 0 auto 3rem;
 }
 
 .promo {
