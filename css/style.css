@@ -78,6 +78,18 @@ html, body {
           justify-content: space-between;
 }
 
+.flex-aic-start, .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 :root {
   --light_color:#fff;
   --accent_color:#F6762C;
@@ -435,4 +447,75 @@ html, body {
 .download__title {
   font-size: 4rem;
   line-height: 1.8;
+}
+
+.footer {
+  background: var(--bg_color);
+  padding: 8.6rem 0 14rem;
+}
+
+.footer__logo {
+  width: 13.2rem;
+  height: 13.2rem;
+}
+
+.footer .logo__wrap {
+  margin-left: -4rem;
+}
+
+.footer__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 3rem;
+}
+
+.footer__list li:not(:first-child) {
+  padding-top: 3rem;
+}
+
+.footer__item-title {
+  font-size: 1.6rem;
+  line-height: 1.19;
+  margin-bottom: 1.4rem;
+}
+
+.footer__mail {
+  margin-top: -3rem;
+}
+
+.footer__list a {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.17;
+  color: var(--light_color);
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.footer__list a:last-child {
+  margin-bottom: 0;
+}
+
+.footer__list svg {
+  fill: var(--accent_color);
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.footer__social a + a {
+  margin-left: 1rem;
+}
+
+.footer__social a {
+  margin-bottom: 0;
+}
+
+.footer__social img {
+  width: 1.5rem;
+  height: 1.5rem;
 }

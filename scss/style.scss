@@ -63,6 +63,11 @@ html,body{
   align-items: center;
   justify-content: space-between;
 }
+.flex-aic-start{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 
 @import '_root';
@@ -72,4 +77,5 @@ html,body{
 @import '_product';
 @import '_reviews';
 @import '_download';
+@import '_footer';
 

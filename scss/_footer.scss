@@ -1,0 +1,57 @@
+.footer{
+  background: var(--bg_color);
+  padding:8.6rem 0 14rem;
+  &__logo{
+    width: 13.2rem;
+    height: 13.2rem;
+  }
+  .logo__wrap{
+    margin-left: -4rem;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items:start;
+    gap: 3rem;
+  }
+  &__list li:not(:first-child){
+    padding-top: 3rem;
+  }
+  &__item-title{
+    font-size: 1.6rem;
+    line-height: 1.19;
+    margin-bottom: 1.4rem;
+  }
+  &__mail{
+    margin-top: -3rem;
+  }
+  &__list a{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.17;
+    color: var(--light_color);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__list svg{
+    fill:var(--accent_color);
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+  &__social{
+    @extend .flex-aic-start;
+    a + a{
+      margin-left: 1rem;
+    }
+    a{
+      margin-bottom: 0;
+    }
+    img{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
